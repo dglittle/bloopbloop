@@ -1,0 +1,7 @@
+bran ches:
+  gh_pages: true
+language: 'node_js'
+node_js: '7'
+script: 'echo "Deploy!!"'
+install: 'npm install -g firebase-tools'
+after_success: 'firebase --token "$FIREBASE_TOKEN" deploy'
